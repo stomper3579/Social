@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -18,13 +19,72 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KFn-Ep-QnD">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="126"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="devslopes-logo" translatesAutoresizingMaskIntoConstraints="NO" id="V0h-ie-RBY">
+                                        <rect key="frame" x="85" y="16" width="150" height="94"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.73725490196078436" blue="0.83137254901960778" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="126" id="0vd-FU-VhM"/>
+                                    <constraint firstItem="V0h-ie-RBY" firstAttribute="centerY" secondItem="KFn-Ep-QnD" secondAttribute="centerY" id="Qsn-lJ-hnH"/>
+                                    <constraint firstItem="V0h-ie-RBY" firstAttribute="centerX" secondItem="KFn-Ep-QnD" secondAttribute="centerX" id="YGw-gd-e6b"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yzB-Em-vld">
+                                <rect key="frame" x="0.0" y="512" width="320" height="56"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="If you haven't signed before, an account will be automatically created for you." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0bY-AM-Hah">
+                                        <rect key="frame" x="16" y="8" width="288" height="40"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" red="0.99989169836044312" green="1" blue="0.99988096952438354" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.088796190917491913" green="0.46721166372299194" blue="0.48519879579544067" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="DJg-yX-vcY"/>
+                                    <constraint firstItem="0bY-AM-Hah" firstAttribute="leading" secondItem="yzB-Em-vld" secondAttribute="leading" constant="8" id="LWP-18-A86"/>
+                                    <constraint firstAttribute="trailing" secondItem="0bY-AM-Hah" secondAttribute="trailing" constant="8" id="QB1-cW-ZAz"/>
+                                    <constraint firstItem="0bY-AM-Hah" firstAttribute="top" secondItem="yzB-Em-vld" secondAttribute="top" constant="8" id="d3N-9K-MAd"/>
+                                    <constraint firstAttribute="bottom" secondItem="0bY-AM-Hah" secondAttribute="bottom" constant="8" id="zBU-Kb-Obx"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="select a sign in method" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kcz-jf-xR1">
+                                <rect key="frame" x="16" y="134" width="288" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="HMx-mf-eHV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.89000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="yzB-Em-vld" secondAttribute="bottom" id="8Qj-CL-bFQ"/>
+                            <constraint firstItem="KFn-Ep-QnD" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="CDs-O6-zTh"/>
+                            <constraint firstAttribute="trailing" secondItem="yzB-Em-vld" secondAttribute="trailing" id="CuF-Pj-m9Y"/>
+                            <constraint firstItem="yzB-Em-vld" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="FS3-Ix-FP5"/>
+                            <constraint firstAttribute="trailing" secondItem="KFn-Ep-QnD" secondAttribute="trailing" id="KnS-MM-jUr"/>
+                            <constraint firstItem="kcz-jf-xR1" firstAttribute="top" secondItem="KFn-Ep-QnD" secondAttribute="bottom" constant="8" id="ZP9-f6-vQo"/>
+                            <constraint firstItem="KFn-Ep-QnD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ilu-Q3-yXm"/>
+                            <constraint firstItem="kcz-jf-xR1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="lrB-og-B9a"/>
+                            <constraint firstItem="kcz-jf-xR1" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="pTd-ed-ZkQ"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="22.5" y="32.74647887323944"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="devslopes-logo" width="150" height="94"/>
+    </resources>
 </document>
