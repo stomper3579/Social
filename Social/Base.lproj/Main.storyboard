@@ -22,7 +22,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KFn-Ep-QnD">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KFn-Ep-QnD" customClass="FancyView" customModule="Social" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="126"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="devslopes-logo" translatesAutoresizingMaskIntoConstraints="NO" id="V0h-ie-RBY">
@@ -64,7 +64,7 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.89000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bYC-Jk-Jnq">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bYC-Jk-Jnq" customClass="RoundButton" customModule="Social" customModuleProvider="target">
                                 <rect key="frame" x="95" y="185" width="130" height="130"/>
                                 <color key="backgroundColor" red="0.35283416509628296" green="0.44076704978942871" blue="0.6976325511932373" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -74,22 +74,22 @@
                                 <state key="normal" image="f"/>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="SOp-1P-6uA">
-                                <rect key="frame" x="46" y="345" width="228" height="110"/>
+                                <rect key="frame" x="46" y="345" width="228" height="90"/>
                                 <subviews>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="q2O-mc-7SN">
-                                        <rect key="frame" x="0.0" y="0.0" width="228" height="30"/>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="q2O-mc-7SN" customClass="FancyField" customModule="Social" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="228" height="20"/>
                                         <color key="textColor" white="0.0" alpha="0.87" colorSpace="calibratedWhite"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2bf-rP-kVy">
-                                        <rect key="frame" x="0.0" y="40" width="228" height="30"/>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2bf-rP-kVy" customClass="FancyField" customModule="Social" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="30" width="228" height="20"/>
                                         <color key="textColor" white="0.0" alpha="0.87" colorSpace="calibratedWhite"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="daH-Gz-Nmr">
-                                        <rect key="frame" x="0.0" y="80" width="228" height="30"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="daH-Gz-Nmr" customClass="FancyButton" customModule="Social" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="60" width="228" height="30"/>
                                         <color key="backgroundColor" red="0.84672814607620239" green="0.32284322381019592" blue="0.1294422447681427" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="Sign In">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
