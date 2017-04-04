@@ -18,6 +18,9 @@
 		69FCE3A41E8C474D00E82A40 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69FCE3A31E8C474D00E82A40 /* RoundButton.swift */; };
 		69FCE3A61E8C488600E82A40 /* FancyField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69FCE3A51E8C488600E82A40 /* FancyField.swift */; };
 		69FCE3A81E8C498500E82A40 /* FancyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69FCE3A71E8C498500E82A40 /* FancyButton.swift */; };
+		69FCE3AE1E8EE70800E82A40 /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69FCE3AD1E8EE70800E82A40 /* FeedVC.swift */; };
+		69FCE3B01E92A65200E82A40 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69FCE3AF1E92A65200E82A40 /* CircleView.swift */; };
+		69FCE3B21E93F54300E82A40 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69FCE3B11E93F54300E82A40 /* PostCell.swift */; };
 		6ADC510826299F19484C83B8 /* Pods_Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2719244C93FE882FA8110058 /* Pods_Social.framework */; };
 /* End PBXBuildFile section */
 
@@ -36,6 +39,9 @@
 		69FCE3A31E8C474D00E82A40 /* RoundButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
 		69FCE3A51E8C488600E82A40 /* FancyField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyField.swift; sourceTree = "<group>"; };
 		69FCE3A71E8C498500E82A40 /* FancyButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyButton.swift; sourceTree = "<group>"; };
+		69FCE3AD1E8EE70800E82A40 /* FeedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
+		69FCE3AF1E92A65200E82A40 /* CircleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
+		69FCE3B11E93F54300E82A40 /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 		7CE0C2F45149532E0F218E7B /* Pods-Social.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Social.release.xcconfig"; path = "Pods/Target Support Files/Pods-Social/Pods-Social.release.xcconfig"; sourceTree = "<group>"; };
 		9D18A622B26E7C570C2412C3 /* Pods-Social.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Social.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Social/Pods-Social.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -98,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				69FCE39C1E8ABBD200E82A40 /* SignInVC.swift */,
+				69FCE3AD1E8EE70800E82A40 /* FeedVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -109,6 +116,8 @@
 				69FCE3A31E8C474D00E82A40 /* RoundButton.swift */,
 				69FCE3A51E8C488600E82A40 /* FancyField.swift */,
 				69FCE3A71E8C498500E82A40 /* FancyButton.swift */,
+				69FCE3AF1E92A65200E82A40 /* CircleView.swift */,
+				69FCE3B11E93F54300E82A40 /* PostCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -263,13 +272,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				69FCE3B01E92A65200E82A40 /* CircleView.swift in Sources */,
 				69FCE3A61E8C488600E82A40 /* FancyField.swift in Sources */,
 				69FCE39D1E8ABBD200E82A40 /* SignInVC.swift in Sources */,
 				69FCE3A41E8C474D00E82A40 /* RoundButton.swift in Sources */,
 				69FCE3A81E8C498500E82A40 /* FancyButton.swift in Sources */,
+				69FCE3AE1E8EE70800E82A40 /* FeedVC.swift in Sources */,
 				69791EE51E8AB936002B3DCA /* AppDelegate.swift in Sources */,
 				69FCE39F1E8C456400E82A40 /* FancyView.swift in Sources */,
 				69FCE3A21E8C45D700E82A40 /* Constants.swift in Sources */,
+				69FCE3B21E93F54300E82A40 /* PostCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
