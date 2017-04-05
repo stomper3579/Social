@@ -203,7 +203,7 @@
                                         </subviews>
                                     </stackView>
                                 </subviews>
-                                <color key="backgroundColor" red="0.84783762693405151" green="0.86960524320602417" blue="0.88333916664123535" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstItem="wut-kG-HJx" firstAttribute="top" secondItem="xZT-sP-kbg" secondAttribute="top" constant="7" id="6gu-pl-5bd"/>
                                     <constraint firstAttribute="bottom" secondItem="wut-kG-HJx" secondAttribute="bottom" constant="7" id="707-lo-bTS"/>
@@ -213,7 +213,7 @@
                                 </constraints>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="312" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="cSu-l5-SLl">
-                                <rect key="frame" x="0.0" y="152" width="320" height="416"/>
+                                <rect key="frame" x="0.0" y="148" width="320" height="420"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PostCell" rowHeight="312" id="v5M-KC-fQ5" customClass="PostCell" customModule="Social" customModuleProvider="target">
@@ -238,7 +238,7 @@
                                                                                 <constraint firstAttribute="width" constant="60" id="rnn-Yg-ZBE"/>
                                                                             </constraints>
                                                                         </imageView>
-                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BVe-sy-itS">
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stomper" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BVe-sy-itS">
                                                                             <rect key="frame" x="60" y="0.0" width="166" height="60"/>
                                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                             <color key="textColor" red="0.84672814610000002" green="0.32284322380000002" blue="0.12944224479999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -303,6 +303,7 @@
                                                     </constraints>
                                                 </view>
                                             </subviews>
+                                            <color key="backgroundColor" red="0.84783762689999997" green="0.86960524319999999" blue="0.8833391666" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <constraints>
                                                 <constraint firstItem="mr5-9p-mIE" firstAttribute="leading" secondItem="N7U-Ea-JL2" secondAttribute="leading" constant="12" id="fmN-Ln-KNn"/>
                                                 <constraint firstAttribute="trailing" secondItem="mr5-9p-mIE" secondAttribute="trailing" constant="12" id="rTD-YX-Vd8"/>
@@ -310,11 +311,18 @@
                                                 <constraint firstItem="mr5-9p-mIE" firstAttribute="top" secondItem="N7U-Ea-JL2" secondAttribute="top" constant="6" id="xLt-kc-d8h"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="caption" destination="Tvl-Rh-me1" id="6zk-39-mh3"/>
+                                            <outlet property="likesLbl" destination="KzV-ax-xvc" id="iJV-tf-t7p"/>
+                                            <outlet property="postImg" destination="YiL-OE-sAV" id="g7D-lX-Jj9"/>
+                                            <outlet property="profileImg" destination="P0N-r2-dKl" id="bHb-rR-fYb"/>
+                                            <outlet property="usernameLbl" destination="BVe-sy-itS" id="FaO-rY-bXZ"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.84783762689999997" green="0.86960524319999999" blue="0.8833391666" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="5Dv-Oh-hS9" secondAttribute="trailing" id="0OO-UM-CqI"/>
                             <constraint firstItem="cSu-l5-SLl" firstAttribute="leading" secondItem="JkQ-qv-nbg" secondAttribute="leading" id="1U4-SO-2Wb"/>
@@ -322,7 +330,7 @@
                             <constraint firstItem="xZT-sP-kbg" firstAttribute="top" secondItem="5Dv-Oh-hS9" secondAttribute="bottom" constant="12" id="Bcp-dD-MPE"/>
                             <constraint firstAttribute="trailing" secondItem="cSu-l5-SLl" secondAttribute="trailing" id="LVJ-hW-7Mg"/>
                             <constraint firstItem="xZT-sP-kbg" firstAttribute="leading" secondItem="JkQ-qv-nbg" secondAttribute="leading" constant="12" id="dMx-WU-CR9"/>
-                            <constraint firstItem="cSu-l5-SLl" firstAttribute="top" secondItem="xZT-sP-kbg" secondAttribute="bottom" constant="12" id="deZ-jA-YTJ"/>
+                            <constraint firstItem="cSu-l5-SLl" firstAttribute="top" secondItem="xZT-sP-kbg" secondAttribute="bottom" constant="8" id="deZ-jA-YTJ"/>
                             <constraint firstAttribute="trailing" secondItem="xZT-sP-kbg" secondAttribute="trailing" constant="12" id="myf-mw-JXd"/>
                             <constraint firstItem="5Dv-Oh-hS9" firstAttribute="leading" secondItem="JkQ-qv-nbg" secondAttribute="leading" id="rtu-wK-ZTo"/>
                             <constraint firstItem="5Dv-Oh-hS9" firstAttribute="top" secondItem="JkQ-qv-nbg" secondAttribute="top" id="vrI-1W-cz2"/>
