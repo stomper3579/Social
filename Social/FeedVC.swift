@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Firebase
+import SwiftKeychainWrapper
 
 class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
@@ -36,6 +38,15 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     }
     
     
+    @IBAction func signOutTapped(_ sender: Any) {
+        
+        //let keychainResult = KeychainWrapper.removeObject(<#T##KeychainWrapper#>)
+        let removeSuccessful: Bool = KeychainWrapper.standard.remove(key: KEY_UID)
+        print("key removed - \(removeSuccessful)")
+        try! FIRAuth.auth()?.signOut()
+        performSegue(withIdentifier: "goToLogin", sender: nil)
+
+    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

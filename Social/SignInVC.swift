@@ -40,7 +40,7 @@ class SignInVC: UIViewController {
         
         facebookLogin.logIn(withReadPermissions: ["email"], from: self) { (result, error) in
             if error != nil {
-                print("unable to auth with FB - \(error)")
+                print("unable to auth with FB - \(String(describing: error))")
             }
             else if result?.isCancelled == true {
                 print("user cancelled FB auth")
@@ -58,12 +58,13 @@ class SignInVC: UIViewController {
     func firebaseAuth(_ credential: FIRAuthCredential) {
         FIRAuth.auth()?.signIn(with: credential, completion: { (user, error) in
             if error != nil {
-                print("unable to auth with Firebase - \(error)")
+                print("unable to auth with Firebase - \(String(describing: error))")
             }
             else {
                 print("successful auth with Firebase")
                 if let user = user {
-                    self.completeSignin(id: user.uid)
+                    let userData = ["provider": credential.provider]
+                    self.completeSignin(id: user.uid, userData: userData)
                 }
             }
         })
@@ -77,17 +78,19 @@ class SignInVC: UIViewController {
                 if(error == nil) {
                     print("sign in with email successful")
                     if let user = user {
-                        self.completeSignin(id: user.uid)
+                        let userData = ["provider": user.providerID]
+                        self.completeSignin(id: user.uid, userData: userData)
                     }
                 }
                 else {
                     FIRAuth.auth()?.createUser(withEmail: email, password: pwd, completion: { (user, error) in
                         if(error != nil) {
-                            print("Unable to email auth with firebase - \(error)")
+                            print("Unable to email auth with firebase - \(String(describing: error))")
                         } else {
                             print("created new email user with firebase")
                             if let user = user {
-                                self.completeSignin(id: user.uid)
+                                let userData = ["provider": user.providerID]
+                                self.completeSignin(id: user.uid, userData: userData)
                             }
                         }
                     })
@@ -97,7 +100,10 @@ class SignInVC: UIViewController {
     }
     
     
-    func completeSignin(id: String) {
+    func completeSignin(id: String, userData: Dictionary<String, String>) {
+        
+        DataService.ds.createFirebaseDBUser(uid: id, userData: userData)
+        
         let saveSuccessful: Bool = KeychainWrapper.standard.set(id, forKey: KEY_UID)
         print("keychain result is: \(saveSuccessful)")
         performSegue(withIdentifier: "goToFeed", sender: nil)
