@@ -266,7 +266,7 @@
                                                                         <constraint firstAttribute="height" constant="60" id="Lmh-4l-lt0"/>
                                                                     </constraints>
                                                                 </stackView>
-                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="YiL-OE-sAV">
+                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="YiL-OE-sAV">
                                                                     <rect key="frame" x="0.0" y="65" width="286" height="146.5"/>
                                                                 </imageView>
                                                                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Tvl-Rh-me1">
@@ -324,6 +324,7 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="caption" destination="Tvl-Rh-me1" id="6zk-39-mh3"/>
+                                            <outlet property="likeImg" destination="Fsa-7r-8Cb" id="8Y1-Wi-LT5"/>
                                             <outlet property="likesLbl" destination="KzV-ax-xvc" id="iJV-tf-t7p"/>
                                             <outlet property="postImg" destination="YiL-OE-sAV" id="g7D-lX-Jj9"/>
                                             <outlet property="profileImg" destination="P0N-r2-dKl" id="bHb-rR-fYb"/>
